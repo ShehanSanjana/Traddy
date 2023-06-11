@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Validation</title>
+  <script>
+    function validateForm() {
+      // Retrieve form values
+      var email = document.forms["myForm"]["email"].value;
+      var phoneNumber = document.forms["myForm"]["phone"].value;
+      
+      // Regular expressions for validation
+      var emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+      var phoneRegex = /^\d{10}$/;
+      
+      // Perform validation
+      if (!emailRegex.test(email)) {
+        alert("Please enter a valid email address");
+        return false;
+      }
+      
+      if (!phoneRegex.test(phoneNumber)) {
+        alert("Please enter a valid 10-digit phone number");
+        return false;
+      }
+      
+      // Form is valid
+      return true;
+    }
+  </script>
+</head>
+<body>
+  <form name="myForm" onsubmit="return validateForm()">
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email"><br><br>
+  
+    <label for="phone">Phone Number:</label>
+    <input type="text" id="phone" name="phone"><br><br>
+    
+    <input type="submit" value="Submit">
+  </form>
+  
+  <!-- Existing Facebook button -->
+  <a href="https://www.facebook.com/" class="fb-button">Facebook</a>
+</body>
+</html>
