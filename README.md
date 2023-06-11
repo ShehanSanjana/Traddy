@@ -1,1 +1,2 @@
 # Traddy
+This is a website regarding the details of Nissan B12 (Trad Sunny) and its details. You can see its history from "History" tab, its previous models by "Family" tab, its trim levels by "Models" tab and the engines came with these trim levels by "Engines" tab. You can contact me for more many details about Nissan trad sunny by contacting me from bottom tabs from Facebook, Twitter or LinkedIn.
